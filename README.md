@@ -59,6 +59,7 @@ public class Main {
     }
 }
 ```
+![Line Plot](src/main/resources/io/github/rajveer/fxplot/line.png)
 ### Scatter Plot
 
 ```java
@@ -86,8 +87,8 @@ public class Main {
         figure2.show();
     }
 }
-
 ```
+![Scatter Plot](src/main/resources/io/github/rajveer/fxplot/scatter.png)
 ### Histogram
 ```java
 import io.github.rajveer.fxplot.Figure;
@@ -111,6 +112,7 @@ public class Main {
     }
 }
 ```
+![Histogram Plot](src/main/resources/io/github/rajveer/fxplot/histogram.png)
 
 ## API Reference
 
