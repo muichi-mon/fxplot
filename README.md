@@ -138,11 +138,20 @@ mvn clean install
 ```
 Then add the dependency in your project:
 ```xml
-<dependency>
-    <groupId>io.github.rajveer</groupId>
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+
+<dependencies>
+  <dependency>
+    <groupId>com.github.muichi-mon</groupId>
     <artifactId>fxplot</artifactId>
-    <version>1.0.0</version>
-</dependency>
+    <version>master-SNAPSHOT</version>
+  </dependency>
+</dependencies>
 ```
 If your project uses the Java module system, add the following line in your module-info.java:
 ```java
