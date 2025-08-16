@@ -136,7 +136,7 @@ Since FXPlot is not yet published to Maven Central, you can build and install it
 ```bash
 mvn clean install
 ```
-Then add the dependency in your project:
+JitPack builds your GitHub repository into a Maven-compatible artifact on demand. To use it:
 ```xml
 <repositories>
   <repository>
@@ -144,7 +144,9 @@ Then add the dependency in your project:
     <url>https://jitpack.io</url>
   </repository>
 </repositories>
-
+```
+Then add the dependency in your project:
+```xml
 <dependencies>
   <dependency>
     <groupId>com.github.muichi-mon</groupId>
