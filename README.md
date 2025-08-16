@@ -137,13 +137,21 @@ Since FXPlot is not yet published to Maven Central, you can build and install it
 mvn clean install
 ```
 Then add the dependency in your project:
-```mvn
+```xml
 <dependency>
     <groupId>io.github.rajveer</groupId>
     <artifactId>fxplot</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
+If your project uses the Java module system, add the following line in your module-info.java:
+```java
+module your.module.name {
+    requires io.github.rajveer.fxplot;
+}
+```
+## ⚠️ Keep in mind:
+#### FXPlot works in JavaFX projects, so make sure you have the necessary JavaFX dependencies and modules added to your project setup.
 ---
 
 ## 📄 License
