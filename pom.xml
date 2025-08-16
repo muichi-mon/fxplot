@@ -10,8 +10,9 @@
     <name>fx-plot</name>
     <description>A simple JavaFX plotting utility inspired by Matplotlib</description>
     <url>https://github.com/muichi-mon/fxplott</url>
+    <inceptionYear>2025</inceptionYear>
 
-    <!-- License -->
+    <!-- License Information -->
     <licenses>
         <license>
             <name>MIT License</name>
@@ -20,25 +21,22 @@
         </license>
     </licenses>
 
-    <!-- Source Control -->
-    <scm>
-        <connection>scm:git:git://github.com/muichi-mon/fxplot.git</connection>
-        <developerConnection>scm:git:ssh://github.com/muichi-mon/fxplot.git</developerConnection>
-        <url>https://github.com/muichi-mon/fxplot</url>
-    </scm>
-
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-    </repositories>
-
+    <!-- Properties -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.10.0</junit.version>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/muichi-mon/fxplot</url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
+
+    <!-- Dependencies -->
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -62,7 +60,6 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
@@ -70,6 +67,7 @@
         </dependency>
     </dependencies>
 
+    <!-- Build Configuration -->
     <build>
         <plugins>
             <plugin>
@@ -98,20 +96,6 @@
                             <stripDebug>true</stripDebug>
                             <noHeaderFiles>true</noHeaderFiles>
                         </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <!-- GPG Signing -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>3.2.8</version>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals><goal>sign</goal></goals>
                     </execution>
                 </executions>
             </plugin>
