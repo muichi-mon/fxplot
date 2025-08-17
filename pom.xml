@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <name>fx-plot</name>
     <description>A simple JavaFX plotting utility inspired by Matplotlib</description>
-    <url>https://github.com/muichi-mon/fxplott</url>
+    <url>https://github.com/muichi-mon/fxplot</url>
     <inceptionYear>2025</inceptionYear>
 
     <!-- License Information -->
